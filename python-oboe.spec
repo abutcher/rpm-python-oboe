@@ -1,7 +1,7 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 
 Name:           python-oboe
-Version:        1.3.8
+Version:        1.4.2
 Release:        1%{?dist}
 Summary:        AppNeta Traceview instrumentation libraries for Python
 
@@ -50,5 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Jul 29 2013 Andrew Butcher <abutcher@redhat.com> - 1.4.2
+- Bump for 1.4.2.
+
 * Mon Jul 29 2013 Andrew Butcher <abutcher@redhat.com> - 1.3.8
 - Initial packaging.
